@@ -65,9 +65,9 @@
         <h2>Goals</h2>
         <br/>
         <ul>
-            <li>Show Spock to Android devs</li>
-            <li>Show difficulties of running Android unit tests</li>
-            <li>Give all of you theoretical background of the subject</li>
+            <li>Quick overview of Android Unit Testing</li>
+            <li>Introduction to Spock and Robolectric</li>
+            <li>How to make it all play together</li>
         </ul>
     </section>
 </section>
@@ -358,10 +358,10 @@ public void myTest() {
         </div>
         <div class="right_compare">
 <pre><code class="java">when:
-thisThrowsSomething()
+  thisThrowsSomething()
 
 then:
-thrown(RuntimeException)</code></pre>
+  thrown(RuntimeException)</code></pre>
         </div>
     </section>
     <section>
@@ -396,7 +396,7 @@ then:
         <div>Groovy</div>
         <div>
 <pre><code class="java">then:
-    userStorage.getAllUsers().find{it.id == id}?.name == "Szymon"
+    userStorage.getAllUsers().find{it.name == "Szymon"}?.age == 10
 </code></pre>
         </div>
         <br/>
